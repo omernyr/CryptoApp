@@ -14,6 +14,11 @@
 		52E16623298A50C30031BF11 /* CoinApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 52E16621298A50C30031BF11 /* CoinApp.xcdatamodeld */; };
 		52E16625298A50C40031BF11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52E16624298A50C40031BF11 /* Assets.xcassets */; };
 		52E16628298A50C40031BF11 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52E16626298A50C40031BF11 /* LaunchScreen.storyboard */; };
+		52E16630298A50D40031BF11 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E1662F298A50D40031BF11 /* DetailViewController.swift */; };
+		52E16632298A50E40031BF11 /* CoinViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E16631298A50E40031BF11 /* CoinViewCell.swift */; };
+		52E16634298A50EE0031BF11 /* CoinModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E16633298A50EE0031BF11 /* CoinModel.swift */; };
+		52E16636298A53A90031BF11 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E16635298A53A90031BF11 /* WebService.swift */; };
+		52E16639298A5BB40031BF11 /* SDWebImageSVGCoder in Frameworks */ = {isa = PBXBuildFile; productRef = 52E16638298A5BB40031BF11 /* SDWebImageSVGCoder */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,10 @@
 		52E16624298A50C40031BF11 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		52E16627298A50C40031BF11 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		52E16629298A50C40031BF11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52E1662F298A50D40031BF11 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		52E16631298A50E40031BF11 /* CoinViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinViewCell.swift; sourceTree = "<group>"; };
+		52E16633298A50EE0031BF11 /* CoinModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinModel.swift; sourceTree = "<group>"; };
+		52E16635298A53A90031BF11 /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52E16639298A5BB40031BF11 /* SDWebImageSVGCoder in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +76,10 @@
 				52E16626298A50C40031BF11 /* LaunchScreen.storyboard */,
 				52E16629298A50C40031BF11 /* Info.plist */,
 				52E16621298A50C30031BF11 /* CoinApp.xcdatamodeld */,
+				52E1662F298A50D40031BF11 /* DetailViewController.swift */,
+				52E16631298A50E40031BF11 /* CoinViewCell.swift */,
+				52E16633298A50EE0031BF11 /* CoinModel.swift */,
+				52E16635298A53A90031BF11 /* WebService.swift */,
 			);
 			path = CoinApp;
 			sourceTree = "<group>";
@@ -86,6 +100,9 @@
 			dependencies = (
 			);
 			name = CoinApp;
+			packageProductDependencies = (
+				52E16638298A5BB40031BF11 /* SDWebImageSVGCoder */,
+			);
 			productName = CoinApp;
 			productReference = 52E16615298A50C30031BF11 /* CoinApp.app */;
 			productType = "com.apple.product-type.application";
@@ -114,6 +131,9 @@
 				Base,
 			);
 			mainGroup = 52E1660C298A50C30031BF11;
+			packageReferences = (
+				52E16637298A5BB40031BF11 /* XCRemoteSwiftPackageReference "SDWebImageSVGCoder" */,
+			);
 			productRefGroup = 52E16616298A50C30031BF11 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -142,9 +162,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				52E1661D298A50C30031BF11 /* ViewController.swift in Sources */,
+				52E16632298A50E40031BF11 /* CoinViewCell.swift in Sources */,
+				52E16636298A53A90031BF11 /* WebService.swift in Sources */,
 				52E16619298A50C30031BF11 /* AppDelegate.swift in Sources */,
+				52E16630298A50D40031BF11 /* DetailViewController.swift in Sources */,
 				52E16623298A50C30031BF11 /* CoinApp.xcdatamodeld in Sources */,
 				52E1661B298A50C30031BF11 /* SceneDelegate.swift in Sources */,
+				52E16634298A50EE0031BF11 /* CoinModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,6 +386,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		52E16637298A5BB40031BF11 /* XCRemoteSwiftPackageReference "SDWebImageSVGCoder" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSVGCoder.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		52E16638298A5BB40031BF11 /* SDWebImageSVGCoder */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 52E16637298A5BB40031BF11 /* XCRemoteSwiftPackageReference "SDWebImageSVGCoder" */;
+			productName = SDWebImageSVGCoder;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		52E16621298A50C30031BF11 /* CoinApp.xcdatamodeld */ = {
