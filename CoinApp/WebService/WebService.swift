@@ -13,7 +13,7 @@ class WebService {
     func getCoins(url: URL, completion: @escaping (Coin) -> Void) {
         
         let request = URLRequest(url: url)
-        URLSession.shared.dataTask(with: request) { data, _, error in
+        let task = URLSession.shared.dataTask(with: request) { data, _, error in
             if let error = error {
                 print(error)
                 return
@@ -27,6 +27,7 @@ class WebService {
                     print(error)
                 }
             }
-        }.resume()
+        }
+        task.resume()
     }
 }

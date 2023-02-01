@@ -68,20 +68,60 @@
 		52E16617298A50C30031BF11 /* CoinApp */ = {
 			isa = PBXGroup;
 			children = (
-				52E16618298A50C30031BF11 /* AppDelegate.swift */,
-				52E1661A298A50C30031BF11 /* SceneDelegate.swift */,
-				52E1661C298A50C30031BF11 /* ViewController.swift */,
+				52FFF47E298AFDD800C0EDBA /* Model */,
+				52FFF47D298AFDC000C0EDBA /* View */,
+				52FFF47B298AFC8400C0EDBA /* Controller */,
+				52FFF47C298AFCC300C0EDBA /* App */,
+				52FFF47F298AFFED00C0EDBA /* WebService */,
 				52E1661E298A50C30031BF11 /* Main.storyboard */,
 				52E16624298A50C40031BF11 /* Assets.xcassets */,
 				52E16626298A50C40031BF11 /* LaunchScreen.storyboard */,
 				52E16629298A50C40031BF11 /* Info.plist */,
 				52E16621298A50C30031BF11 /* CoinApp.xcdatamodeld */,
-				52E1662F298A50D40031BF11 /* DetailViewController.swift */,
-				52E16631298A50E40031BF11 /* CoinViewCell.swift */,
-				52E16633298A50EE0031BF11 /* CoinModel.swift */,
-				52E16635298A53A90031BF11 /* WebService.swift */,
 			);
 			path = CoinApp;
+			sourceTree = "<group>";
+		};
+		52FFF47B298AFC8400C0EDBA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				52E1662F298A50D40031BF11 /* DetailViewController.swift */,
+				52E1661C298A50C30031BF11 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		52FFF47C298AFCC300C0EDBA /* App */ = {
+			isa = PBXGroup;
+			children = (
+				52E16618298A50C30031BF11 /* AppDelegate.swift */,
+				52E1661A298A50C30031BF11 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		52FFF47D298AFDC000C0EDBA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				52E16631298A50E40031BF11 /* CoinViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		52FFF47E298AFDD800C0EDBA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				52E16633298A50EE0031BF11 /* CoinModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		52FFF47F298AFFED00C0EDBA /* WebService */ = {
+			isa = PBXGroup;
+			children = (
+				52E16635298A53A90031BF11 /* WebService.swift */,
+			);
+			path = WebService;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

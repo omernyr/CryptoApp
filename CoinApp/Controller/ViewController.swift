@@ -8,7 +8,7 @@
 import UIKit
 import SDWebImageSVGCoder
 
-class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UISearchResultsUpdating {
+class ViewController: UIViewController, UISearchResultsUpdating {
     
     @IBOutlet weak var searchBar: UISearchBar!
     
@@ -26,6 +26,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             self.tableView.reloadData()
         }
     }
+    
     var searchController: UISearchController!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -66,7 +67,9 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             }
         }
     }
-    
+}
+
+extension ViewController: UITableViewDataSource, UITableViewDelegate {
     func numberOfSections(in tableView: UITableView) -> Int {
         
         if isFiltering() {
@@ -163,4 +166,5 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             destinationVC.selectedCoinSymbol = clickedCoinSymbol
         }
     }
+    
 }
